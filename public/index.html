@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="You can help Pikachu to normal with CSS">
+  <meta name="keywords" content="Help Pikachu with CSS, Help, Pikachu, CSS, ChaiyoKung, Chaiyo">
+  <meta name="author" content="ChaiyoKung">
+  <title>Help Pikachu with CSS</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-database.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-firestore.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-functions.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-messaging.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-storage.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-analytics.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-remote-config.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.3.1/firebase-performance.js"></script> -->
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="./codemirror-5.59.4/lib/codemirror.css">
+  <link rel="stylesheet" href="./codemirror-5.59.4/theme/duotone-dark.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Edit CSS to help Pikachu</h1>
+    <img src="./img/original.jpg" alt="original" width="200">
+    <button id="btn-start">Start</button>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col result">
+        <iframe id="frame"></iframe>
+      </div>
+      <div class="col code">
+        <textarea class="codemirror-textarea">
+/*
+  __________index.html__________
+  &lt;body&gt;
+    &lt;div id="image"&gt;
+      &lt;img src="..." alt="..." id="head" &gt;
+      &lt;div id="face"&gt;
+        &lt;div id="eyes"&gt;
+          &lt;img src="..." alt="..." id="left-eye"&gt;
+          &lt;img src="..." alt="..." id="right-eye"&gt;
+        &lt;/div&gt;
+        &lt;img src="...-" alt="..." id="nose"&gt;
+        &lt;div id="cheaks"&gt;
+          &lt;img src="..." alt="..." id="left-cheak"&gt;
+          &lt;img src="..." alt="..." id="right-cheak"&gt;
+        &lt;/div&gt;
+        &lt;img src="..." alt="..." id="mouth"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+*/
+
+/* ==================================================== */
+/* :::::::::::::::::::: Edit Below :::::::::::::::::::: */
+/* ==================================================== */
+
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  position: relative;
+}
+
+#head {
+  width: 100%;
+}
+
+#face {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 3%;
+  bottom: 5%;
+  margin-left: 10%;
+}
+
+#eyes {
+  
+}
+
+#left-eye {
+  width: 10%;
+}
+
+#right-eye {
+  width: 10%;
+}
+
+#nose {
+  width: 8%;
+}
+
+#cheaks {
+
+}
+
+#left-cheak {
+  width: 15%;
+}
+
+#right-cheak {
+  width: 15%;
+}
+
+#mouth {
+  width: 17%;
+}</textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="./codemirror-5.59.4/lib/codemirror.js"></script>
+  <script src="./codemirror-5.59.4/mode/css/css.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    });
+  </script> -->
+</body>
+
+</html>
